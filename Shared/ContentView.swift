@@ -22,18 +22,21 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
+                Spacer( )
+                let chartStyle = ChartStyle(backgroundColor: Color.black, accentColor: Colors.GradientNeonBlue, secondGradientColor: Colors.OrangeEnd, textColor: Color.white, legendTextColor: Color.black, dropShadowColor: Color.white)
                 //LineView(data: [8,9,7,7.5,5,8,10], title: "My Sleep", legend: "Hours")
                 if chartData[0] != ("Test", 10.0) {
-                    BarChartView(data: ChartData(values: chartData), title: "My Sleep Hours", legend: "Per day", form: ChartForm.extraLarge)
+                    BarChartView(data: ChartData(values: chartData), title: "My Sleep Hours", legend: "Per day", style: chartStyle, form: ChartForm.extraLarge)
                 }
+
+                //BarChartView(data: ChartData(values: [("Monday",8), ("Tuesday",7), ("Wednesday",6), ("Thursday",7.5), ("Today",9)]), title: "My Sleep Hours", legend: "Per day", style: chartStyle, form: ChartForm.extraLarge)
+                Spacer()
+                BarChartView(data: ChartData(values: [("Monday",8), ("Tuesday",7), ("Wednesday",6), ("Thursday",7.5), ("Today",9)]), title: "My Sleep Rating", legend: "Per day", style: chartStyle, form: ChartForm.extraLarge)
+                Spacer()
                 Text("This is our sleep tracker app!")
-                Button(action: {
-                    getData()
-                }) {
-                    Text("click")
-                }
-                
             }
+            .background(Image("background").resizable().scaledToFill().clipped())
+            .edgesIgnoringSafeArea([.top])
             
             .navigationBarTitle("Sleep Tracker App", displayMode: .inline)
             .navigationBarItems(trailing: NavigationLink(destination: LogSleepView()) {

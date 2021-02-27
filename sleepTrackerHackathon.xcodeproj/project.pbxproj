@@ -53,6 +53,7 @@
 		115AB61025EAB352004A97B9 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		115AB61225EAB352004A97B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		115AB64125EAC169004A97B9 /* LogSleepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogSleepView.swift; sourceTree = "<group>"; };
+		79E7329225EAF2DE00C1FF3A /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +107,7 @@
 				115AB5EA25EAB351004A97B9 /* sleepTrackerHackathonApp.swift */,
 				115AB5EB25EAB351004A97B9 /* ContentView.swift */,
 				115AB64125EAC169004A97B9 /* LogSleepView.swift */,
+				79E7329225EAF2DE00C1FF3A /* background.jpg */,
 				115AB5EC25EAB352004A97B9 /* Assets.xcassets */,
 			);
 			path = Shared;

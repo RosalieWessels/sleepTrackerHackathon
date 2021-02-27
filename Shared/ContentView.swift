@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             
-            Text("This is our sleep tracker app!")
+            Text("Testing")
             
                 .navigationBarTitle("Sleep Tracker App", displayMode: .inline)
                 .navigationBarItems(trailing: NavigationLink(destination: LogSleepView()) {

@@ -9,7 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("This is our sleep tracker app!")
+        NavigationView {
+            Text("This is our sleep tracker app!")
+                .navigationBarTitle("Sleep Tracker App")
+                .navigationBarItems(trailing: NavigationLink(destination: LogSleepView()) {
+                    Text("Log Sleep")
+                })
+        }
+        
     }
 }
 

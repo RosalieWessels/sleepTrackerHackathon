@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>103753742879-2f2mm1qi5hnicbe2b2aip1gb9i42q46t.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.103753742879-2f2mm1qi5hnicbe2b2aip1gb9i42q46t</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDmATr2K96kIj25-KTEMbBmJief6crFLbo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>103753742879</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.RosalieWessels.sleepTrackerHackathon</string>
+	<key>PROJECT_ID</key>
+	<string>sleeptrackerhackathon</string>
+	<key>STORAGE_BUCKET</key>
+	<string>sleeptrackerhackathon.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:103753742879:ios:6a1ea3bf17cda62efa732a</string>
+</dict>
+</plist>

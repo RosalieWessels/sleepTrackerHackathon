@@ -10,8 +10,10 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView {
+            
             Text("This is our sleep tracker app!")
-                .navigationBarTitle("Sleep Tracker App")
+            
+                .navigationBarTitle("Sleep Tracker App", displayMode: .inline)
                 .navigationBarItems(trailing: NavigationLink(destination: LogSleepView()) {
                     Text("Log Sleep")
                 })

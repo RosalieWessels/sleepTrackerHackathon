@@ -10,6 +10,8 @@ import SwiftUI
 struct LogSleepView: View {
     var body: some View {
         Text("Log Sleep")
+            
+        .navigationBarTitle("Log Sleep", displayMode: .inline)
     }
 }
 

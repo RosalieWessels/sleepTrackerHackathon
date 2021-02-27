@@ -14,6 +14,7 @@ struct LogSleepView: View {
     @State var logDay = Date()
     @State var hoursSlept: String = ""
     @State var rating: Int?
+    @State var notes: String = ""
     
     var body: some View {
     
@@ -55,6 +56,20 @@ struct LogSleepView: View {
                 .frame(width: 260, height: 85, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 .background(Color.white.opacity(0.8))
                 .cornerRadius(10)
+                
+                ZStack {
+                    Rectangle()
+                        .frame(width: 260, height: 85, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .foregroundColor(Color.white.opacity(0.8))
+                        .cornerRadius(10)
+                        .padding(1)
+                    TextField("Notes...", text:$notes)
+                        .font(Font.custom("Menlo-Italic", size: 10))
+                        .frame(width: 230, height: 85, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .background(Color.white.opacity(0.1))
+                        .cornerRadius(10)
+                }
+                .padding(0.5)
                 
                 Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
                     ZStack {

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		115AB61825EAB352004A97B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 115AB5EC25EAB352004A97B9 /* Assets.xcassets */; };
 		115AB64225EAC169004A97B9 /* LogSleepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115AB64125EAC169004A97B9 /* LogSleepView.swift */; };
 		115AB64325EAC169004A97B9 /* LogSleepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115AB64125EAC169004A97B9 /* LogSleepView.swift */; };
+		115AB66E25EAC9EC004A97B9 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 115AB66D25EAC9EC004A97B9 /* SwiftUICharts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				115AB66E25EAC9EC004A97B9 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +173,9 @@
 			dependencies = (
 			);
 			name = "sleepTrackerHackathon (iOS)";
+			packageProductDependencies = (
+				115AB66D25EAC9EC004A97B9 /* SwiftUICharts */,
+			);
 			productName = "sleepTrackerHackathon (iOS)";
 			productReference = 115AB5F125EAB352004A97B9 /* sleepTrackerHackathon.app */;
 			productType = "com.apple.product-type.application";
@@ -262,6 +267,9 @@
 				Base,
 			);
 			mainGroup = 115AB5E425EAB351004A97B9;
+			packageReferences = (
+				115AB66C25EAC9EC004A97B9 /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			productRefGroup = 115AB5F225EAB352004A97B9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -692,6 +700,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		115AB66C25EAC9EC004A97B9 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		115AB66D25EAC9EC004A97B9 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 115AB66C25EAC9EC004A97B9 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 115AB5E525EAB351004A97B9 /* Project object */;
 }

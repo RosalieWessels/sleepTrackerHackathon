@@ -38,6 +38,7 @@ struct ContentView: View {
             .background(Image("background").resizable().scaledToFill().clipped())
             .edgesIgnoringSafeArea([.top])
             
+            
             .navigationBarTitle("Sleep Tracker App", displayMode: .inline)
             .navigationBarItems(trailing: NavigationLink(destination: LogSleepView()) {
                 Text("Log Sleep")

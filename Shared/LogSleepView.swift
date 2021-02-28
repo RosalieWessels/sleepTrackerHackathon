@@ -117,7 +117,7 @@ struct LogSleepView: View {
             
             db.collection("TestPerson").document().setData([
                 "Date": logDay,
-                "DateString": "1/27",
+                "DateString": "2/27",
                 "SleepHours": Double(hoursSlept),
                 "SleepRating": Int(rating!),
                 "Notes": notes

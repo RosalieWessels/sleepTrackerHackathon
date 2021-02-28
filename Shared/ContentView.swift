@@ -30,8 +30,10 @@ struct ContentView: View {
                     //Spacer( )
                     let chartStyle = ChartStyle(backgroundColor: Color.black, accentColor: Colors.GradientNeonBlue, secondGradientColor: Colors.OrangeEnd, textColor: Color.white, legendTextColor: Color.black, dropShadowColor: Color.black)
                     
+                    let chartStyle2 = ChartStyle(backgroundColor: Color.black, accentColor: Colors.GradientLowerBlue, secondGradientColor: Colors.OrangeEnd, textColor: Color.white, legendTextColor: Color.black, dropShadowColor: Color.black)
+                    
                     if chartData[0] != ("Test", 10.0) {
-                        BarChartView(data: ChartData(values: chartData), title: "My Sleep Hours", legend: "Per day", style: chartStyle, form: ChartForm.extraLarge)
+                        BarChartView(data: ChartData(values: chartData), title: "My Sleep Hours", legend: "Per day", style: chartStyle2, form: ChartForm.extraLarge)
                     }
 
     //                Spacer()

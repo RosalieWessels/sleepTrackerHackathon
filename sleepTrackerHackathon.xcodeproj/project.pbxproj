@@ -17,9 +17,11 @@
 		115AB61825EAB352004A97B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 115AB5EC25EAB352004A97B9 /* Assets.xcassets */; };
 		115AB64225EAC169004A97B9 /* LogSleepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115AB64125EAC169004A97B9 /* LogSleepView.swift */; };
 		115AB64325EAC169004A97B9 /* LogSleepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115AB64125EAC169004A97B9 /* LogSleepView.swift */; };
-		115AB66E25EAC9EC004A97B9 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 115AB66D25EAC9EC004A97B9 /* SwiftPackageProductDependency */; };
+		115AB66E25EAC9EC004A97B9 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 115AB66D25EAC9EC004A97B9 /* SwiftUICharts */; };
 		115AB67825EAD7AE004A97B9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 115AB67725EAD7AE004A97B9 /* GoogleService-Info.plist */; };
 		115AB67925EAD7AE004A97B9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 115AB67725EAD7AE004A97B9 /* GoogleService-Info.plist */; };
+		119117D825EB14280088F6BE /* AmbientSoundsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119117D725EB14280088F6BE /* AmbientSoundsView.swift */; };
+		119117D925EB14280088F6BE /* AmbientSoundsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119117D725EB14280088F6BE /* AmbientSoundsView.swift */; };
 		1A2848FD366679B43A9DC238 /* Pods_sleepTrackerHackathon__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF999B72FA2FA98D34E90E98 /* Pods_sleepTrackerHackathon__iOS_.framework */; };
 		FD558A4DE070FA73B3009DAC /* Pods_sleepTrackerHackathon__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D8547421DBBD9E860DB789 /* Pods_sleepTrackerHackathon__macOS_.framework */; };
 /* End PBXBuildFile section */
@@ -60,6 +62,7 @@
 		115AB61225EAB352004A97B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		115AB64125EAC169004A97B9 /* LogSleepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogSleepView.swift; sourceTree = "<group>"; };
 		115AB67725EAD7AE004A97B9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		119117D725EB14280088F6BE /* AmbientSoundsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmbientSoundsView.swift; sourceTree = "<group>"; };
 		48D8547421DBBD9E860DB789 /* Pods_sleepTrackerHackathon__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sleepTrackerHackathon__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		977CC24BC07CD332E227EB91 /* Pods-sleepTrackerHackathon (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sleepTrackerHackathon (macOS).debug.xcconfig"; path = "Target Support Files/Pods-sleepTrackerHackathon (macOS)/Pods-sleepTrackerHackathon (macOS).debug.xcconfig"; sourceTree = "<group>"; };
 		9AF13214C5B89198BD20DE72 /* Pods-sleepTrackerHackathon (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sleepTrackerHackathon (iOS).debug.xcconfig"; path = "Target Support Files/Pods-sleepTrackerHackathon (iOS)/Pods-sleepTrackerHackathon (iOS).debug.xcconfig"; sourceTree = "<group>"; };
@@ -71,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				115AB66E25EAC9EC004A97B9 /* BuildFile in Frameworks */,
+				115AB66E25EAC9EC004A97B9 /* SwiftUICharts in Frameworks */,
 				1A2848FD366679B43A9DC238 /* Pods_sleepTrackerHackathon__iOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -119,9 +122,9 @@
 			isa = PBXGroup;
 			children = (
 				115AB5EA25EAB351004A97B9 /* sleepTrackerHackathonApp.swift */,
+				119117D725EB14280088F6BE /* AmbientSoundsView.swift */,
 				115AB5EB25EAB351004A97B9 /* ContentView.swift */,
 				115AB64125EAC169004A97B9 /* LogSleepView.swift */,
-				79E7329225EAF2DE00C1FF3A /* background.jpg */,
 				115AB5EC25EAB352004A97B9 /* Assets.xcassets */,
 				115AB67725EAD7AE004A97B9 /* GoogleService-Info.plist */,
 			);
@@ -182,7 +185,6 @@
 				977CC24BC07CD332E227EB91 /* Pods-sleepTrackerHackathon (macOS).debug.xcconfig */,
 				0EA088E5EA6B3E8525401667 /* Pods-sleepTrackerHackathon (macOS).release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -214,7 +216,7 @@
 			);
 			name = "sleepTrackerHackathon (iOS)";
 			packageProductDependencies = (
-				115AB66D25EAC9EC004A97B9 /* SwiftPackageProductDependency */,
+				115AB66D25EAC9EC004A97B9 /* SwiftUICharts */,
 			);
 			productName = "sleepTrackerHackathon (iOS)";
 			productReference = 115AB5F125EAB352004A97B9 /* sleepTrackerHackathon.app */;
@@ -310,7 +312,7 @@
 			);
 			mainGroup = 115AB5E425EAB351004A97B9;
 			packageReferences = (
-				115AB66C25EAC9EC004A97B9 /* RemoteSwiftPackageReference */,
+				115AB66C25EAC9EC004A97B9 /* XCRemoteSwiftPackageReference "ChartView" */,
 			);
 			productRefGroup = 115AB5F225EAB352004A97B9 /* Products */;
 			projectDirPath = "";
@@ -446,6 +448,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				115AB64225EAC169004A97B9 /* LogSleepView.swift in Sources */,
+				119117D825EB14280088F6BE /* AmbientSoundsView.swift in Sources */,
 				115AB61525EAB352004A97B9 /* ContentView.swift in Sources */,
 				115AB61325EAB352004A97B9 /* sleepTrackerHackathonApp.swift in Sources */,
 			);
@@ -456,6 +459,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				115AB64325EAC169004A97B9 /* LogSleepView.swift in Sources */,
+				119117D925EB14280088F6BE /* AmbientSoundsView.swift in Sources */,
 				115AB61625EAB352004A97B9 /* ContentView.swift in Sources */,
 				115AB61425EAB352004A97B9 /* sleepTrackerHackathonApp.swift in Sources */,
 			);
@@ -831,7 +835,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		115AB66C25EAC9EC004A97B9 /* RemoteSwiftPackageReference */ = {
+		115AB66C25EAC9EC004A97B9 /* XCRemoteSwiftPackageReference "ChartView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AppPear/ChartView";
 			requirement = {
@@ -842,9 +846,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		115AB66D25EAC9EC004A97B9 /* SwiftPackageProductDependency */ = {
+		115AB66D25EAC9EC004A97B9 /* SwiftUICharts */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 115AB66C25EAC9EC004A97B9 /* RemoteSwiftPackageReference */;
+			package = 115AB66C25EAC9EC004A97B9 /* XCRemoteSwiftPackageReference "ChartView" */;
 			productName = SwiftUICharts;
 		};
 /* End XCSwiftPackageProductDependency section */

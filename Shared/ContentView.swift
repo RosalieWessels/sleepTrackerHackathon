@@ -40,7 +40,9 @@ struct ContentView: View {
             
             
             .navigationBarTitle("Sleep Tracker App", displayMode: .inline)
-            .navigationBarItems(trailing: NavigationLink(destination: LogSleepView()) {
+            .navigationBarItems(leading: NavigationLink(destination: AmbientSoundsView()) {
+                Text("Sounds")
+            }, trailing: NavigationLink(destination: LogSleepView()) {
                 Text("Log Sleep")
             })
             .onAppear(perform: getData)

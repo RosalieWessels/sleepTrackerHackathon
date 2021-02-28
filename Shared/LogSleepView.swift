@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct LogSleepView: View {
+    
+    @State var db = Firestore.firestore()
+    @Environment(\.presentationMode) var presentationMode
     
     @State var screenWidth = UIScreen.main.bounds.size.width
     
@@ -71,7 +75,23 @@ struct LogSleepView: View {
                 }
                 .padding(0.5)
                 
-                Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
+//                NavigationLink(destination: ContentView()) {
+//                    ZStack {
+//                        Rectangle()
+//                            .frame(width: 70, height: 25)
+//                            .cornerRadius(10)
+//                            .shadow(radius: 20)
+//                            .foregroundColor(Color.white.opacity(0.8))
+//                        Text("Submit")
+//                            .foregroundColor(Color(.black))
+//                            .font(Font.custom("Menlo-Bold", size: 15))
+//                    }
+//                }.simultaneousGesture(TapGesture().onEnded{
+//                    submitButtonPressed()
+//                })
+//                .padding(.top, 20)
+                
+                Button(action: submitButtonPressed) {
                     ZStack {
                         Rectangle()
                             .frame(width: 70, height: 25)
@@ -90,6 +110,28 @@ struct LogSleepView: View {
         .background(Image("moonBackground")
                         .scaledToFill())
         }
+    
+        func submitButtonPressed() {
+            //let myTimeStamp = logDay.timeIntervalSince1970
+            
+            
+            db.collection("TestPerson").document().setData([
+                "Date": logDay,
+                "DateString": "1/27",
+                "SleepHours": Double(hoursSlept),
+                "SleepRating": Int(rating!),
+                "Notes": notes
+            ]) { err in
+                if let err = err {
+                    print("Error writing document: \(err)")
+                } else {
+                    print("Document successfully written!")
+                }
+            }
+            self.presentationMode.wrappedValue.dismiss()
+        }
+    
+        
     }
 
 struct RatingView: View {

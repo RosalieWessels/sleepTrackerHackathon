@@ -104,6 +104,7 @@ struct ContentView: View {
                                 
                                 if chartData.count == 6 && chartData[0] == ("Test", 10.0) {
                                     chartData.remove(at: 0)
+                                    chartData.reverse()
                                 }
                                 
                                 if let rating = document.get("SleepRating") as? Int {
@@ -113,6 +114,7 @@ struct ContentView: View {
                                     
                                     if ratingsData.count == 6 && ratingsData[0] == ("Test", 10) {
                                         ratingsData.remove(at: 0)
+                                        ratingsData.reverse()
                                     }
                                 }
                                 
@@ -142,6 +144,7 @@ struct ContentView: View {
                                 
                                 if chartData.count == 6 && chartData[0] == ("Test", 10.0) {
                                     chartData.remove(at: 0)
+                                    chartData.reverse()
                                 }
                                 
                                 if let rating = document.get("SleepRating") as? Int {
@@ -151,6 +154,7 @@ struct ContentView: View {
                                     
                                     if ratingsData.count == 6 && ratingsData[0] == ("Test", 10) {
                                         ratingsData.remove(at: 0)
+                                        ratingsData.reverse()
                                     }
                                 }
                             }
@@ -164,6 +168,10 @@ struct ContentView: View {
     }
     
     func getDataForIndividualBoxes() {
+        daysData = [String]()
+        sleepData = [Double]()
+        ratingData = [Int]()
+        noteData = [String]()
         db.collection("TestPerson").order(by: "Date", descending: true).limit(to: 5).getDocuments() { (querySnapshot, err) in
             if let err = err {
                 print("Error getting documents: \(err)")

@@ -22,9 +22,9 @@
 		115AB67925EAD7AE004A97B9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 115AB67725EAD7AE004A97B9 /* GoogleService-Info.plist */; };
 		119117D825EB14280088F6BE /* AmbientSoundsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119117D725EB14280088F6BE /* AmbientSoundsView.swift */; };
 		119117D925EB14280088F6BE /* AmbientSoundsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119117D725EB14280088F6BE /* AmbientSoundsView.swift */; };
+		119117E925EB3B140088F6BE /* calmSounds.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 119117E425EB3B130088F6BE /* calmSounds.mp3 */; };
+		119117EA25EB3B140088F6BE /* calmSounds.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 119117E425EB3B130088F6BE /* calmSounds.mp3 */; };
 		1A2848FD366679B43A9DC238 /* Pods_sleepTrackerHackathon__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF999B72FA2FA98D34E90E98 /* Pods_sleepTrackerHackathon__iOS_.framework */; };
-		427B57FD25EB256200B3B804 /* calmSounds.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 427B57FC25EB256200B3B804 /* calmSounds.mp3 */; };
-		427B57FE25EB256200B3B804 /* calmSounds.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 427B57FC25EB256200B3B804 /* calmSounds.mp3 */; };
 		FD558A4DE070FA73B3009DAC /* Pods_sleepTrackerHackathon__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D8547421DBBD9E860DB789 /* Pods_sleepTrackerHackathon__macOS_.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,7 +65,7 @@
 		115AB64125EAC169004A97B9 /* LogSleepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogSleepView.swift; sourceTree = "<group>"; };
 		115AB67725EAD7AE004A97B9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		119117D725EB14280088F6BE /* AmbientSoundsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmbientSoundsView.swift; sourceTree = "<group>"; };
-		427B57FC25EB256200B3B804 /* calmSounds.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = calmSounds.mp3; path = ../../../calmSounds.mp3; sourceTree = "<group>"; };
+		119117E425EB3B130088F6BE /* calmSounds.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = calmSounds.mp3; sourceTree = "<group>"; };
 		48D8547421DBBD9E860DB789 /* Pods_sleepTrackerHackathon__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sleepTrackerHackathon__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		977CC24BC07CD332E227EB91 /* Pods-sleepTrackerHackathon (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sleepTrackerHackathon (macOS).debug.xcconfig"; path = "Target Support Files/Pods-sleepTrackerHackathon (macOS)/Pods-sleepTrackerHackathon (macOS).debug.xcconfig"; sourceTree = "<group>"; };
 		9AF13214C5B89198BD20DE72 /* Pods-sleepTrackerHackathon (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sleepTrackerHackathon (iOS).debug.xcconfig"; path = "Target Support Files/Pods-sleepTrackerHackathon (iOS)/Pods-sleepTrackerHackathon (iOS).debug.xcconfig"; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 				115AB5EB25EAB351004A97B9 /* ContentView.swift */,
 				115AB64125EAC169004A97B9 /* LogSleepView.swift */,
 				115AB5EC25EAB352004A97B9 /* Assets.xcassets */,
-				427B57FC25EB256200B3B804 /* calmSounds.mp3 */,
+				119117E425EB3B130088F6BE /* calmSounds.mp3 */,
 				115AB67725EAD7AE004A97B9 /* GoogleService-Info.plist */,
 			);
 			path = Shared;
@@ -337,7 +337,7 @@
 			files = (
 				115AB61725EAB352004A97B9 /* Assets.xcassets in Resources */,
 				115AB67825EAD7AE004A97B9 /* GoogleService-Info.plist in Resources */,
-				427B57FD25EB256200B3B804 /* calmSounds.mp3 in Resources */,
+				119117E925EB3B140088F6BE /* calmSounds.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +347,7 @@
 			files = (
 				115AB61825EAB352004A97B9 /* Assets.xcassets in Resources */,
 				115AB67925EAD7AE004A97B9 /* GoogleService-Info.plist in Resources */,
-				427B57FE25EB256200B3B804 /* calmSounds.mp3 in Resources */,
+				119117EA25EB3B140088F6BE /* calmSounds.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

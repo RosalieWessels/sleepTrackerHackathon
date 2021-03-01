@@ -1,5 +1,5 @@
 # sleepTrackerHackathon
-###Built for the Lancer Hacks Hackathon 2021:
+Built for the Lancer Hacks Hackathon 2021:
 https://devpost.com/software/midnight-monitoring-sleep-tracker
 
 ## Inspiration

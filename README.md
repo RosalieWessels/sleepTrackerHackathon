@@ -1,4 +1,4 @@
-# sleepTrackerHackathon
+# Midnight Monitoring - Sleep Tracker app
 Built for the Lancer Hacks Hackathon 2021:
 https://devpost.com/software/midnight-monitoring-sleep-tracker
 
